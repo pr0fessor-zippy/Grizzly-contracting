@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grizzly Contracting | Tyler Ross | Bigfork, MT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-green: #2d3a30;
+            --brand-gold: #c5a47e;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .border-gold { border-color: var(--brand-gold); }
+        .text-gold { color: var(--brand-gold); }
+        .bg-brand { background-color: var(--brand-green); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold tracking-tighter text-slate-800">GRIZZLY</span>
+                <span class="text-[10px] tracking-[0.3em] uppercase text-gold -mt-1 font-semibold">Contracting</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest text-slate-600">
+                <a href="#about" class="hover:text-gold transition-colors">About</a>
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#lakeshore" class="hover:text-gold transition-colors">Lakeshore</a>
+                <a href="#contact" class="hover:text-gold transition-colors underline decoration-gold decoration-2 underline-offset-8">Contact</a>
+            </div>
+
+            <button onclick="document.getElementById('contact').scrollIntoView()" class="bg-brand text-white px-6 py-2 text-xs font-bold uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">
+                Get an Estimate
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-6 w-full pt-20">
+            <div class="max-w-3xl">
+                <h2 class="text-gold uppercase tracking-[0.4em] text-sm font-bold mb-4">Tyler Ross | Bigfork, Montana</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Crafting the Modern <br>Montana Legacy.</h1>
+                <p class="text-xl text-slate-200 mb-10 font-light leading-relaxed">
+                    Boutique custom home building and luxury renovations tailored to the unique landscape of Flathead Lake.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="bg-gold text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest text-center hover:bg-[#b3936d] transition-colors">
+                        View Services
+                    </button>
+                    <a href="#contact" class="border border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest text-center hover:bg-white/10 transition-colors">
+                        Discuss Your Project
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-slate-800 mb-6">Building with Integrity.</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Headed by <strong>Tyler Ross</strong>, Grizzly Contracting represents a commitment to architectural excellence in the Flathead Valley. We aren't high-volume builders; we are craftsmen who take on a select number of projects each year to ensure every joint, finish, and detail meets a standard of perfection.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        From modern lakeside estates in Bigfork to historic cabin restorations, we navigate the complexities of Montana's terrain and regulations so you don't have to.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-[1px] bg-gold"></div>
+                        <span class="text-gold font-bold uppercase tracking-widest text-sm">The Grizzly Standard</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-100 h-64 rounded-sm overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Worksite">
+                    </div>
+                    <div class="bg-slate-100 h-64 rounded-sm overflow-hidden mt-8 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21ef45?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Finish Detail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Our Specializations</h2>
+                <div class="w-20 h-1 bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Custom Build -->
+                <div class="bg-white p-10 shadow-sm border-t-4 border-gold hover:shadow-xl transition-shadow group">
+                    <div class="mb-6 text-brand">
+                        <svg class="w-10 h-10 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Custom Home Building</h3>
+                    <p class="text-slate-600 leading-relaxed">End-to-end management of luxury residential projects, focused on structural integrity and architectural vision.</p>
+                </div>
+
+                <!-- High End Remodel -->
+                <div class="bg-white p-10 shadow-sm border-t-4 border-gold hover:shadow-xl transition-shadow group">
+                    <div class="mb-6 text-brand">
+                        <svg class="w-10 h-10 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Luxury Remodels</h3>
+                    <p class="text-slate-600 leading-relaxed">Modernizing legacy Flathead properties with seamless additions and high-performance interior upgrades.</p>
+                </div>
+
+                <!-- Finish Carpentry -->
+                <div class="bg-white p-10 shadow-sm border-t-4 border-gold hover:shadow-xl transition-shadow group">
+                    <div class="mb-6 text-brand">
+                        <svg class="w-10 h-10 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Artisan Finish Work</h3>
+                    <p class="text-slate-600 leading-relaxed">Exquisite timber framing, custom millwork, and masonry that defines the interior character of your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lakeshore Section -->
+    <section id="lakeshore" class="py-24 bg-brand text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-2xl">
+                <h2 class="text-gold uppercase tracking-widest text-sm font-bold mb-4">The Flathead Lake Specialist</h2>
+                <h3 class="text-4xl font-bold mb-6">Lakeshore Construction & Permitting</h3>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                    Building on the shores of Flathead Lake requires more than just a hammer. We are experts in navigating the **Lakeshore Protection Regulations** of Lake and Flathead counties, ensuring your docks, decks, and shoreline structures are beautiful, legal, and built to last against the Montana elements.
+                </p>
+                <ul class="space-y-4 text-slate-200">
+                    <li class="flex items-center"><svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Shoreline stabilization & erosion control</li>
+                    <li class="flex items-center"><svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Luxury deck and outdoor kitchen builds</li>
+                    <li class="flex items-center"><svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Permitting and regulatory consultation</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Decorative SVG wave -->
+        <div class="absolute right-[-10%] bottom-[-10%] opacity-10">
+            <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.6,-31.3,86.9,-15.7,85.6,-0.7C84.3,14.2,78.3,28.5,69.9,40.4C61.5,52.3,50.7,61.9,38.3,69.1C25.9,76.3,13,81.1,-0.7,82.3C-14.3,83.5,-28.7,81.1,-41.2,74C-53.7,66.9,-64.4,55,-72.6,41.4C-80.9,27.8,-86.7,12.5,-85.4,-2.2C-84.1,-16.9,-75.7,-31,-65.4,-42.6C-55.1,-54.2,-42.8,-63.3,-29.9,-70.8C-17,-78.3,-3.5,-84.2,10.6,-82.4C24.7,-80.6,31.3,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-50 border border-slate-200 rounded-sm overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="bg-brand text-white p-12 md:w-1/3">
+                    <h2 class="text-3xl font-bold mb-8">Start Your Project</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-gold uppercase text-xs font-bold tracking-widest mb-1">Based In</p>
+                            <p class="text-lg">Bigfork, Montana</p>
+                        </div>
+                        <div>
+                            <p class="text-gold uppercase text-xs font-bold tracking-widest mb-1">Serving</p>
+                            <p class="text-lg">Flathead & Lake Counties</p>
+                        </div>
+                        <div>
+                            <p class="text-gold uppercase text-xs font-bold tracking-widest mb-1">Principal</p>
+                            <p class="text-lg">Tyler Ross</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-12 md:w-2/3">
+                    <form onsubmit="event.preventDefault(); document.getElementById('msg-box').classList.remove('hidden');" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Name</label>
+                            <input type="text" class="w-full bg-white border border-slate-300 p-3 outline-none focus:border-gold transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Email</label>
+                            <input type="email" class="w-full bg-white border border-slate-300 p-3 outline-none focus:border-gold transition-colors" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Project Type</label>
+                            <select class="w-full bg-white border border-slate-300 p-3 outline-none focus:border-gold transition-colors">
+                                <option>Custom New Build</option>
+                                <option>Home Renovation</option>
+                                <option>Lakeshore / Dock Work</option>
+                                <option>Consultation</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-white border border-slate-300 p-3 outline-none focus:border-gold transition-colors" placeholder="Briefly describe your vision..."></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" class="bg-gold text-white px-10 py-4 font-bold uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity w-full md:w-auto">
+                                Send Inquiry
+                            </button>
+                        </div>
+                    </form>
+                    <div id="msg-box" class="hidden mt-6 bg-green-50 border border-green-200 text-green-800 p-4 rounded-sm text-sm">
+                        Thank you for your interest. Tyler or a member of the team will reach out to you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex flex-col mb-6 md:mb-0">
+                <span class="text-xl font-bold tracking-tighter">GRIZZLY</span>
+                <span class="text-[8px] tracking-[0.3em] uppercase text-gold -mt-1">Contracting</span>
+            </div>
+            <div class="text-slate-500 text-xs tracking-widest uppercase text-center">
+                &copy; 2024 Grizzly Contracting LLC. | Licensed, Bonded, and Insured.
+            </div>
+            <div class="mt-6 md:mt-0 flex space-x-6">
+                <!-- Simple social placeholders -->
+                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                <div class="w-2 h-2 bg-gold rounded-full"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
