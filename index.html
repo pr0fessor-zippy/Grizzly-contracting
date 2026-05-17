@@ -6,10 +6,13 @@
     <title>Grizzly Contracting | Luxury Roofing Contractors & Remodeling Near Bigfork & Polson MT</title>
     <meta name="description" content="Looking for premium roofing contractors near you in Flathead Lake? Grizzly Contracting specializes in luxury roof replacements, panoramic glass framing, and custom lakeside builds across Polson and Bigfork, MT.">
     <meta name="keywords" content="roofing contractors near me, local roofers, custom builders Bigfork MT, Polson Montana roofing, Flathead Lake contractors, Tyler Ross construction">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -17,7 +20,7 @@
       "name": "Grizzly Contracting",
       "image": "https://pr0fessor-zippy.github.io/Grizzly-contracting/window3.jpeg",
       "description": "Premium roofing contractors and luxury home remodeling serving the Flathead Lake region.",
-      "url": "https://pr0fessor-zippy.github.io/Grizzly-contracting/",
+      "url": "https://grizzlycontractingmt.com",
       "telephone": "(406)-471-5267",
       "address": {
         "@type": "PostalAddress",
@@ -35,12 +38,12 @@
       "areaServed": [
         {"@type": "AdministrativeArea", "name": "Polson"},
         {"@type": "AdministrativeArea", "name": "Bigfork"},
-        {"@type": "AdministrativeArea", "name": "Flathead County"},
-        {"@type": "AdministrativeArea", "name": "Lake County"}
+        {"@type": "AdministrativeArea", "name": "Flathead Lake"}
       ],
       "priceRange": "$$$$"
     }
     </script>
+    
     <style>
         :root {
             --brand-green: #2d3a30;
@@ -49,18 +52,18 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            display: block !important; /* Forces layout fallback display if CDN stalls */
         }
         h1, h2, h3, .serif {
             font-family: 'Playfair Display', serif;
         }
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('hero-luxury-home.jpeg');
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('window3.jpeg');
             background-size: cover;
             background-position: center;
         }
         .glass-nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.98);
         }
         .border-gold { border-color: var(--brand-gold); }
         .text-gold { color: var(--brand-gold); }
@@ -69,7 +72,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+    <nav class="fixed w-full top-0 left-0 z-50 glass-nav border-b border-slate-200 block" style="display: block;">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex flex-col">
                 <span class="text-2xl font-bold tracking-tighter text-slate-800">GRIZZLY</span>
@@ -77,10 +80,9 @@
             </div>
             <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest text-slate-600">
                 <a href="#about" class="hover:text-gold transition-colors">About</a>
-                <a href="#services" class="hover:text-gold transition-colors">Roofing & Services</a>
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
                 <a href="#gallery" class="hover:text-gold transition-colors">Projects</a>
-                <a href="#lakeshore" class="hover:text-gold transition-colors">Lakeshore</a>
-                <a href="#contact" class="hover:text-gold transition-colors underline decoration-gold decoration-2 underline-offset-8">Contact</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
             </div>
             <button onclick="document.getElementById('contact').scrollIntoView()" class="bg-brand text-white px-6 py-2 text-xs font-bold uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">
                 Local Estimate
@@ -88,11 +90,11 @@
         </div>
     </nav>
 
-    <section class="relative h-screen flex items-center hero-gradient text-white">
-        <div class="max-w-7xl mx-auto px-6 w-full pt-20">
+    <section class="relative min-h-screen flex items-center hero-gradient text-white pt-20">
+        <div class="max-w-7xl mx-auto px-6 w-full py-12">
             <div class="max-w-3xl">
                 <h2 class="text-gold uppercase tracking-[0.4em] text-sm font-bold mb-4">Tyler Ross | Flathead Lake, MT</h2>
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">The Premier Local Roofing & Home Legacy.</h1>
+                <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">The Premier Local Roofing & Home Legacy.</h1>
                 <p class="text-xl text-slate-200 mb-10 font-light leading-relaxed">
                     Stop searching for elite roofing contractors near you. We deliver custom high-performance roofing systems, structural window configurations, and luxury lakeside renovations tailored to Northwest Montana.
                 </p>
@@ -126,7 +128,246 @@
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-slate-100 h-64 rounded-sm overflow-hidden shadow-xl">
-                        <img src="window4.jpeg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Grizzly Contracting luxury architectural roofing installation near Bigfork MT">
+                        <img src="window4.jpeg" class="w-full h-full object-cover" alt="Grizzly Contracting luxury architectural roofing installation near Bigfork MT">
                     </div>
                     <div class="bg-slate-100 h-64 rounded-sm overflow-hidden mt-8 shadow-xl">
-                        <img src="window5.jpeg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration
+                        <img src="window5.jpeg" class="w-full h-full object-cover" alt="Custom lakeside window layout and structural framing by Tyler Ross">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-gold uppercase tracking-widest text-sm font-bold mb-4">Recent Area Projects</h2>
+                <h3 class="text-4xl font-bold">Precision Engineering Showcase</h3>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="window1.jpeg" class="w-full h-64 object-cover" alt="Roofing work context">
+                    <div class="p-6"><h4 class="text-lg font-bold">Structural Glass Layout</h4></div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="window2.jpeg" class="w-full h-64 object-cover" alt="Panoramic scenic view integration">
+                    <div class="p-6"><h4 class="text-lg font-bold">Lakeshore Integration</h4></div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="window3.jpeg" class="w-full h-64 object-cover" alt="Premium residential build profile">
+                    <div class="p-6"><h4 class="text-lg font-bold">Flawless Continuity</h4></div>
+                </div>
+
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072431_230.jpg" class="w-full h-64 object-cover" alt="Roof Perimeter Structural Work">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Roof Framing Integration</h4>
+                        <p class="text-slate-400 text-xs mt-1">Heavy timber layouts engineered for peak weight distribution.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072431_399.jpg" class="w-full h-64 object-cover" alt="Elevated Structural Layouts">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Elevated Structural Profiles</h4>
+                        <p class="text-slate-400 text-xs mt-1">Precision alignments optimized for viewing vistas.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072431_501.jpg" class="w-full h-64 object-cover" alt="Premium Material Management">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Premium Material Management</h4>
+                        <p class="text-slate-400 text-xs mt-1">Top-tier weather-shield system distribution.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072431_615.jpg" class="w-full h-64 object-cover" alt="Custom Component Milling">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Custom Component Milling</h4>
+                        <p class="text-slate-400 text-xs mt-1">On-site precision tight-seam custom alterations.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_085.jpg" class="w-full h-64 object-cover" alt="Core Structural Reinforcement">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Core Structural Framing</h4>
+                        <p class="text-slate-400 text-xs mt-1">Internal bracing built for severe snow load capacities.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_276.jpg" class="w-full h-64 object-cover" alt="Architectural Extensions">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Architectural Extensions</h4>
+                        <p class="text-slate-400 text-xs mt-1">Upgrading existing blueprints seamlessly.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_396.jpg" class="w-full h-64 object-cover" alt="Advanced Ridge Integration">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Advanced Ridge Integration</h4>
+                        <p class="text-slate-400 text-xs mt-1">Complex high-elevation pitch assemblies.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_504.jpg" class="w-full h-64 object-cover" alt="Total Weather-Lock Protection">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Total Vapor-Shield Wrap</h4>
+                        <p class="text-slate-400 text-xs mt-1">High-end thermal and elements moisture barriers.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_726.jpg" class="w-full h-64 object-cover" alt="Premium Outdoor Living Connection">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Premium Deck Connections</h4>
+                        <p class="text-slate-400 text-xs mt-1">Clean exterior pathways matching modern entryways.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_834.jpg" class="w-full h-64 object-cover" alt="Commercial-Grade Residential Form">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Commercial-Grade Form</h4>
+                        <p class="text-slate-400 text-xs mt-1">Multi-level complex framing profiles built rugged.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072933_938.jpg" class="w-full h-64 object-cover" alt="Modern Residential Elevation">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Custom Modern Elevations</h4>
+                        <p class="text-slate-400 text-xs mt-1">Premium visual curb appeal across local properties.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-sm overflow-hidden shadow-lg">
+                    <img src="Image_20260517_072934_027.jpg" class="w-full h-64 object-cover" alt="Engineered Base Systems">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold">Engineered Base Elements</h4>
+                        <p class="text-slate-400 text-xs mt-1">Lower structural modifications paired with custom rockwork.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-800">Elite Capabilities</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-md border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-4">Luxury Roofing Systems</h3>
+                    <p class="text-slate-600 text-sm">High-performance custom architectural shingles, standing seam metal configurations, and advanced structural updates engineered for extreme mountain conditions.</p>
+                </div>
+                <div class="bg-white p-8 shadow-md border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-4">Panoramic Glass & Framing</h3>
+                    <p class="text-slate-600 text-sm">Precision structural configurations built to safely frame expansive luxury floor-to-ceiling panoramic lakeside installations.</p>
+                </div>
+                <div class="bg-white p-8 shadow-md border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-4">Lakeshore Custom Remodels</h3>
+                    <p class="text-slate-600 text-sm">Navigating complex local regulatory ordinances smoothly while executing immaculate structural modifications and premium finishes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-50 border border-slate-200 rounded-sm overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="bg-brand text-white p-12 md:w-1/3">
+                    <h2 class="text-2xl font-bold mb-6">Contact Local Office</h2>
+                    <div class="space-y-4 text-sm">
+                        <p><strong>HQ Address:</strong><br>708 1st St E Suite B<br>Polson, MT 59860</p>
+                        <p><strong>Phone:</strong><br><a href="tel:4064715267" class="text-gold underline font-bold">(406) 471-5267</a></p>
+                        <p><strong>Areas Served:</strong><br>Polson, Bigfork, & Flathead Lake Waterfront communities.</p>
+                    </div>
+                </div>
+                <div class="p-12 md:w-2/3">
+                    <form id="email-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="hidden" name="access_key" value="091a14eb-31a8-4447-b8db-410a0e7a2dfb">
+                        <input type="hidden" name="subject" value="New Service Inquiry - Grizzly Contracting Website">
+                        
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Name</label>
+                            <input type="text" name="name" class="w-full bg-white border border-slate-300 p-3 outline-none" placeholder="First & Last Name" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Email</label>
+                            <input type="email" name="email" class="w-full bg-white border border-slate-300 p-3 outline-none" placeholder="your@email.com" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Project Classification</label>
+                            <select name="classification" class="w-full bg-white border border-slate-300 p-3 outline-none">
+                                <option>Luxury Roofing System Work</option>
+                                <option>High-End Panoramic Windows / Glass</option>
+                                <option>Lakeshore Custom Residential Remodel</option>
+                                <option>Other Architectural Framing</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Project Scope Description</label>
+                            <textarea name="message" rows="4" class="w-full bg-white border border-slate-300 p-3 outline-none" placeholder="Describe your structural timeline goals..." required></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" id="submit-btn" class="bg-gold text-white px-10 py-4 font-bold uppercase tracking-widest rounded-sm hover:opacity-90 transition-all w-full md:w-auto">
+                                Run Local Quote
+                            </button>
+                        </div>
+                    </form>
+                    <div id="msg-box" class="hidden mt-6 bg-green-50 border border-green-200 text-green-800 p-4 rounded-sm text-sm">
+                        Thank you for reaching out! Your inquiry has been processed successfully. Tyler or our nearest localized field estimator will contact you shortly.
+                    </div>
+                    <div id="err-box" class="hidden mt-6 bg-red-50 border border-red-200 text-red-800 p-4 rounded-sm text-sm">
+                        Something went wrong. Please check your network connection and try again.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-8 border-t border-slate-800 text-center text-xs tracking-widest text-slate-500 uppercase">
+        © 2026 Grizzly Contracting LLC. | Local Expert Roofing Contractors near Flathead Valley. Licensed, Bonded, and Insured.
+    </footer>
+
+    <script>
+        const form = document.getElementById('email-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const msgBox = document.getElementById('msg-box');
+        const errBox = document.getElementById('err-box');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Processing...";
+            errBox.classList.add('hidden');
+            msgBox.classList.add('hidden');
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: json
+            })
+            .then(async (response) => {
+                if (response.status == 200) {
+                    msgBox.classList.remove('hidden');
+                    form.reset();
+                } else {
+                    errBox.classList.remove('hidden');
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                errBox.classList.remove('hidden');
+            })
+            .then(function() {
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Run Local Quote";
+            });
+        });
+    </script>
+</body>
+</html>
